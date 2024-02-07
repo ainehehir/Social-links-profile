@@ -1,0 +1,105 @@
+:root{
+
+    --clr-green:hsl(75, 94%, 57%);
+    --clr-white:hsl(0, 0%, 100%);
+    --clr-grey:hsl(0, 0%, 20%);
+    --clr-dark-grey:hsl(0, 0%, 12%);
+    --clr-off-black:hsl(0, 0%, 8%);
+
+    --ff-sans: 'Inter', sans-serif;
+
+    --fs-400:0.875rem;
+
+    --fw-regular:400;
+    --fw-semi-bold:600;
+    --fw-bold:700;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+html{
+   scroll-behavior: smooth;
+    font-family: var(--ff-sans);
+    font-size: var(--fs-400);
+    background-color: #000;
+    color: var(--clr-white);
+}
+
+body{
+   margin:0 auto;
+   max-width: 600px;
+}
+
+
+.card{
+    background-color: var(--clr-off-black);
+    border-radius: 2rem;
+    text-align: center;
+    margin-block: 7.5rem;
+    margin-inline: 2.75rem;
+    padding:1.75rem 1.5rem;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 2.5rem auto;
+    
+}
+
+
+.card__username{
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+    padding-bottom: 1rem;
+    line-height: 1.5;
+    
+}
+
+.card__address{
+    color: var(--clr-green);
+    font-weight: var(--fw-semi-bold);
+    padding-bottom: 2rem;
+}
+
+.card__bio{
+    padding-bottom: 2rem;
+}
+
+.social__buttons{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    align-items: center;
+
+    
+}
+
+button{
+    background-color: var(--clr-grey);
+    color: var(--clr-white);
+    font-weight: var(--fw-bold);
+    border-radius: 8px;
+    max-width:280px;
+    width: 100%;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+
+button:hover,
+button:focus{
+    background-color: var(--clr-green);
+    color: var(--clr-off-black);
+}
+
+
